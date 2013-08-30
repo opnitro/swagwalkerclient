@@ -10,7 +10,7 @@ public class Prompt {
 		//Objects
 		Scanner scanner = new Scanner(System.in);
 		Database database = new Database();
-		Confirm confirm = new Confirm();
+		Input in = new Input();
 		//String for user
 		String user;
 		int points;
@@ -21,9 +21,10 @@ public class Prompt {
 			//TODO
 			//Change confirm.name to input.getName, 
 			//and make confirm just have one method that works for all variables
-			user = input.name();
-			database.add(user);
-		}
+			user = in.getName();
+			System.out.println(user);
+			//database.add(user);
+		}/*
 		else if(input.equals("removeuser")){
 			user = input.name();
 			database.remove(user);
@@ -38,7 +39,7 @@ public class Prompt {
 		}else{
 			System.out.println("Invalid Command");
 			start();
-		}
+		} */
 		
 		
 	}
