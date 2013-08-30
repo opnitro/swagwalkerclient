@@ -21,15 +21,15 @@ public class Prompt {
 			//TODO
 			//Change confirm.name to input.getName, 
 			//and make confirm just have one method that works for all variables
-			user = confirm.name();
+			user = input.name();
 			database.add(user);
 		}
 		else if(input.equals("removeuser")){
-			user = confirm.name();
+			user = input.name();
 			database.remove(user);
 		}else if(input.equals("addpoints")){
-			user = confirm.user();
-			points = confirm.points();
+			user = input.user();
+			points = input.points();
 			database.addPoints(user, points)
 		}else if(input.equals("compile")){
 			datebase.compile();
