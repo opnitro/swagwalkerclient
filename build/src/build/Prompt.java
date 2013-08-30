@@ -7,8 +7,10 @@ public class Prompt {
 	public void start(){
 		//String for holding input
 		String input;
-		//Create a new scanner object
+		//Objects
 		Scanner scanner = new Scanner(System.in);
+		Database database = new Database();
+		Confirm confirm = new Confirm();
 		//String for user
 		String user;
 		int points;
@@ -16,6 +18,9 @@ public class Prompt {
 		input = scanner.nextLine();
 		
 		if(input.equals("adduser")){
+			//TODO
+			//Change confirm.name to input.getName, 
+			//and make confirm just have one method that works for all variables
 			user = confirm.name();
 			database.add(user);
 		}
