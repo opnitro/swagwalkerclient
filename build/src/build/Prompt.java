@@ -1,10 +1,11 @@
 package build;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Prompt {
 
-	public void start(){
+	public void start() throws IOException{
 		//String for holding input
 		String input;
 		//Objects
@@ -23,14 +24,10 @@ public class Prompt {
 			//and make confirm just have one method that works for all variables
 			user = in.getName();
 			System.out.println(user);
-			//database.add(user);
-		}/*
-		else if(input.equals("removeuser")){
-			user = input.name();
-			database.remove(user);
+			database.addUser(user);
 		}else if(input.equals("addpoints")){
-			user = input.user();
-			points = input.points();
+			user = in.getName();
+			points = in.getPoints();
 			database.addPoints(user, points)
 		}else if(input.equals("compile")){
 			datebase.compile();

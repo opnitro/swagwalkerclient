@@ -22,6 +22,21 @@ private String answer;
 		
 		return name;
 	}
+	
+	public int getPoints(){
+		int x;
+		boolean y = true;
+		while(y){
+			System.out.println("Enter the amount of points");
+			answer = scanner.nextLine();
+			
+			
+			
+		}
+		x = Integer.parseInt(answer);
+		
+		return x;
+	}
 		
 	
 	
